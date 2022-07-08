@@ -1,19 +1,23 @@
 :root {
+    font-size: 16px;
     --accent: #002fa7;
     --bg: #f7f7f7;
     --contrast: #222;
+    --mark: #555;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  /* border: 1px solid black; */
 }
 
 html,
 body {
   width: 100%;
   min-height: 100vh;
+  font-family: sans-serif;
 }
 
 body {

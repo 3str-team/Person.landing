@@ -9,23 +9,35 @@
     <link rel="stylesheet" href="css/header.css">
 </head>
 <body>
+    <input type="radio" id="about" hidden name="info" checked>
+    <input type="radio" id="projects" hidden name="info">
     <header>
         <section class="info">
             <span class="photo"><img src="assets/photo-min.jpg" alt="Фотография"></span>
-            <div class="name">
+            <div class="subinfo">
                 <span class="name">Бичурин Мирза Имамович</span>
                 <span class="job">
                     <span class="univerce">
                         Новгородский государственный университет имени Ярослава Мурого (НовГУ)
                     </span>
                     <span class="job_title">
-                        Заведующий кафедрой проектирования и технологии радиоаппаратуры
+                        <strong>Заведующий кафедрой</strong> проектирования и технологии радиоаппаратуры
                     </span>
                 </span>
             </div>
             <span class="contacts">
                 <a href="#">Контакты</a>
             </span>
+        </section>
+        <section class="navigate">
+            <ul>
+                <li>
+                    <label for="about" id="aboutLabel">Основное</label>
+                </li>
+                <li>
+                    <label for="projects">Проекты</label>
+                </li>
+            </ul>
         </section>
     </header>
     <footer></footer>
