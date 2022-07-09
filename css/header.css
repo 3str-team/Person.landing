@@ -59,11 +59,13 @@ header .info .contacts {
   width: 100%;
   min-width: 300px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 }
 
-header .info .contacts a {
+header .info .contacts label {
   text-decoration: none;
   color: var(--accent);
   padding: 12px 27px;
@@ -73,11 +75,65 @@ header .info .contacts a {
   -moz-transition: all 0.2s;
   -ms-transition: all 0.2s;
   -o-transition: all 0.2s;
+  cursor: pointer;
 }
 
-header .info .contacts a:hover {
+header .info .contacts label:hover {
   color: var(--bg);
   background: var(--accent);
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+
+header .info .contacts .links {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+
+header .info .contacts .links input {
+  display: none;
+}
+
+header .info .contacts .links span {
+  width: 35px;
+  height: 35px;
+  display: grid;
+  place-items: center;
+  background: #f0f0f0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+}
+
+header .info .contacts .links span:hover {
+  background: #e7e7e7;
+  color: var(--accent);
+}
+
+header .info .contacts .links .email {
+  font-size: 23px;
+}
+
+#contacts:checked ~ .links {
+  height: 35px;
+  opacity: 1;
   transition: all 0.2s;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
@@ -156,8 +212,33 @@ header .navigate ul li label:hover::before {
   -o-transition: width 0.2s;
 }
 
+.log {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  max-width: 30%;
+  padding: 15px 30px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background: #4369c7;
+  color: var(--bg);
+  pointer-events: none;
+}
+
 @media (max-width: 660px) {
   :root {
     font-size: 12px;
   }
+  .log {
+    right: 50%;
+    max-width: 80%;
+    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+}
 }

@@ -1,9 +1,9 @@
 :root {
-    font-size: 16px;
-    --accent: #002fa7;
-    --bg: #f7f7f7;
-    --contrast: #222;
-    --mark: #555;
+  font-size: 16px;
+  --accent: #002fa7;
+  --bg: #f7f7f7;
+  --contrast: #222;
+  --mark: #555;
 }
 
 * {
@@ -11,6 +11,10 @@
   margin: 0;
   box-sizing: border-box;
   /* border: 1px solid black; */
+}
+
+*:hover {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 html,
@@ -23,7 +27,5 @@ body {
 }
 
 body {
-    background: var(--bg);
+  background: var(--bg);
 }
-
-
