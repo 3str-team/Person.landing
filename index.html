@@ -14,15 +14,18 @@
     />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/profile.css" />
   </head>
   <body>
     <!-- <span class="log">Текст скопирован в буфер обмена</span> -->
     <input type="radio" id="about" hidden name="info" checked />
     <input type="radio" id="projects" hidden name="info" />
+    <input type="radio" id="work" hidden name="info" checked />
+    <input type="radio" id="prof" hidden name="info" />
     <header>
       <section class="info">
         <span class="photo">
-          <img src="assets/photo-min.jpg" alt="Фотография"/>
+          <img src="assets/photo-min.jpg" alt="Фотография" />
         </span>
         <div class="subinfo">
           <span class="name">Бичурин Мирза Имамович</span>
@@ -50,7 +53,13 @@
       <section class="navigate">
         <ul>
           <li>
-            <label for="about" id="aboutLabel">Основное</label>
+            <label for="about">Основное</label>
+          </li>
+          <li>
+            <label for="work">Аннотация деятельности</label>
+          </li>
+          <li>
+            <label for="prof">Квалификация</label>
           </li>
           <li>
             <label for="projects">Проекты</label>
@@ -58,6 +67,28 @@
         </ul>
       </section>
     </header>
+
+    <section class="profile">
+      <span class="about">
+        <div class="row">
+          <span>Учёное звание</span>
+          <span>Профессор</span>
+        </div>
+        <div class="row">
+          <span>Образование</span>
+          <span>Высшее</span>
+        </div>
+        <div class="row">
+          <span>Специальность</span>
+          <span>Физика и техника магнитоэлектрических явлений</span>
+        </div>
+        <div class="row">
+          <span>Рабочий график</span>
+          <span>Вт.-Пт. с 11-00 до 17-00 каф. ПТРА, каб.2603</span>
+        </div>
+      </span>
+    </section>
+
     <footer></footer>
     <script src="js/logs.js"></script>
     <script src="js/contacts.js"></script>

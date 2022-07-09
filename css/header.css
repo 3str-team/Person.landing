@@ -3,8 +3,9 @@ header {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  padding: 100px 50px 10px 50px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  padding: 0 0 10px 0;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.20);
+  z-index: 10;
 }
 
 header .info {
@@ -13,6 +14,7 @@ header .info {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  padding: 100px 50px 0 50px;
   gap: 30px;
 }
 
@@ -146,13 +148,16 @@ header .navigate {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
   margin-top: 50px;
+
 }
 
 header .navigate ul {
   display: flex;
-  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px 5px;
 }
 
 header .navigate ul li {
@@ -202,7 +207,9 @@ header .navigate ul li label:hover::before {
 }
 
 #about:checked ~ header .navigate ul li label[for="about"]::before,
-#projects:checked ~ header .navigate ul li label[for="projects"]::before {
+#projects:checked ~ header .navigate ul li label[for="projects"]::before,
+#work:checked ~ header .navigate ul li label[for="work"]::before,
+#prof:checked ~ header .navigate ul li label[for="prof"]::before {
   width: 50%;
   opacity: 1;
   transition: width 0.2s;
@@ -228,6 +235,10 @@ header .navigate ul li label:hover::before {
   pointer-events: none;
 }
 
+.log.error {
+  background: rgb(238, 37, 37);
+}
+
 @media (max-width: 660px) {
   :root {
     font-size: 12px;
@@ -240,5 +251,5 @@ header .navigate ul li label:hover::before {
     -moz-transform: translateX(50%);
     -ms-transform: translateX(50%);
     -o-transform: translateX(50%);
-}
+  }
 }

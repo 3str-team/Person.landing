@@ -6,6 +6,11 @@
   --mark: #555;
 }
 
+::selection {
+  background-color: var(--accent);
+  color: var(--bg);
+}
+
 * {
   padding: 0;
   margin: 0;

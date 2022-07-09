@@ -1,0 +1,29 @@
+.profile {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.profile .about {
+    display: none;
+    width: 100%;
+    max-width: 900px;
+    margin-top: 20px;
+}
+
+.profile .about .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    gap: 20px;
+    padding: 30px 40px;
+}
+
+.profile .about .row span:nth-child(2) {
+    text-align: end;
+}
+
+#about:checked ~ .profile .about {
+    display: block;
+}
