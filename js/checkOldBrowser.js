@@ -13,6 +13,7 @@ for (let i = 0; i < arrayOfProps.length; ++i) {
       text: "Ваш браузер устарел. Это може привести к некорректному отображению сайта. Пожалуйста, обновитесь",
       duration: 3000,
       isErr: true,
+      infinity: true
     });
     break;
   }

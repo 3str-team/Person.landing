@@ -1,4 +1,3 @@
-console.log(Modernizr);
 const email = document.querySelector("header .info .contacts .links .email");
 
 const copyEmail = () => {
