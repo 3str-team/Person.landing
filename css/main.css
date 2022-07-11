@@ -89,9 +89,16 @@ body {
   cursor: pointer;
 }
 
+@media (max-width: 901px) and (min-width: 661px) {
+  .logs {
+    max-width: 50%;
+  }
+}
+
 @media (max-width: 660px) {
   .logs {
     right: 50%;
+    width: 80%;
     max-width: 80%;
     transform: translateX(50%);
     -webkit-transform: translateX(50%);

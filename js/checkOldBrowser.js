@@ -8,7 +8,7 @@ const arrayOfProps = [
 
 for (let i = 0; i < arrayOfProps.length; ++i) {
   let prop = arrayOfProps[i];
-  if (Modernizr[prop] == undefined || Modernizr[prop] == false) {
+  if (Modernizr[prop] != undefined || Modernizr[prop] == false) {
     new Log({
       text: "Ваш браузер устарел. Это може привести к некорректному отображению сайта. Пожалуйста, обновитесь",
       duration: 3000,
