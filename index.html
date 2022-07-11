@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/footer.css" />
   </head>
   <body>
-    <!-- <span class="log">Текст скопирован в буфер обмена</span> -->
+    <div class="logs"></div>
     <input type="radio" id="about" hidden name="info" checked />
     <input type="radio" id="projects" hidden name="info" />
     <input type="radio" id="work" hidden name="info" />
@@ -136,7 +136,25 @@
         <span>Mirza.Bichurin@novsu.ru</span>
       </div>
     </footer>
+
+    <!-- <div class="oldBrowserBanner">
+      <div class="card">
+        <span class="message">
+          Внимание
+          <br />
+          Ваш браузер устарел. Из-за этого внешний вид сайта может быть не таким,
+          каким его задумывал автор. Это происходит из-за того, что некоторые
+          функции ваш браузер уже не поддерживает. Этот сайт корректно отображает
+          ~90% всех устройств в мире. Пожалуйста, задумайтесь над тем, чтобы
+          обновиться
+        </span>
+        <button>Зарыть</button>
+      </div>
+    </div> -->
+
+    <script src="js/modernizr-custom.js"></script>
     <script src="js/logs.js"></script>
+    <script src="js/checkOldBrowser.js"></script>
     <script src="js/contacts.js"></script>
   </body>
 </html>
