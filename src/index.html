@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Бичурин Мирза Имамович | Заведующий кафедрой проектирования и технологии
+      радиоаппаратуры
+    </title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
+  <body>
+    <div class="logs"></div>
+    <input type="radio" id="about" hidden name="info" checked />
+    <input type="radio" id="projects" hidden name="info" />
+    <input type="radio" id="work" hidden name="info" />
+    <input type="radio" id="prof" hidden name="info" />
+    <header>
+      <section class="info">
+        <span class="photo">
+          <img src="assets/photo-min.jpg" alt="Фотография" />
+        </span>
+        <div class="subinfo">
+          <span class="name">Бичурин Мирза Имамович</span>
+          <span class="job">
+            <span class="univerce">
+              Новгородский государственный университет имени Ярослава Мурого
+              (НовГУ)
+            </span>
+            <span class="job_title">
+              <strong>Заведующий кафедрой</strong> проектирования и технологии
+              радиоаппаратуры
+            </span>
+          </span>
+        </div>
+        <span class="contacts">
+          <input type="checkbox" id="contacts" hidden />
+          <label for="contacts">Контакты</label>
+          <div class="links">
+            <span class="email" title="E-mail" onclick="copyEmail()">
+              <i class="bx bx-envelope"></i>
+            </span>
+          </div>
+        </span>
+      </section>
+      <section class="navigate">
+        <ul>
+          <li>
+            <label for="about">Основное</label>
+          </li>
+          <li>
+            <label for="work">Аннотация деятельности</label>
+          </li>
+          <li>
+            <label for="prof">Квалификация</label>
+          </li>
+          <li>
+            <label for="projects">Проекты</label>
+          </li>
+        </ul>
+      </section>
+    </header>
+
+    <section class="profile">
+      <span class="field about">
+        <div class="row">
+          <span>Рабочий график</span>
+          <span>Вт.-Пт. с 11-00 до 17-00 каф. ПТРА, каб.2603</span>
+        </div>
+        <div class="row">
+          <span>Учёное звание</span>
+          <span>Профессор</span>
+        </div>
+        <div class="row">
+          <span>Образование</span>
+          <span>Высшее</span>
+        </div>
+        <div class="row">
+          <span>Специальность</span>
+          <span>Физика и техника магнитоэлектрических явлений</span>
+        </div>
+        <div class="row">
+          <span>Педагогический стаж</span>
+          <span>55 лет</span>
+        </div>
+      </span>
+
+      <span class="field work">
+        <div class="text">
+          Заслуженный деятель науки РФ, заслуженный работник Высшей школы РФ, им
+          подготовлено 2 доктора, 10 кандидатов наук, в настоящее время является
+          руководителем 6 аспирантов и 2 докторантов. Руководит кафедрой ПТРА с
+          1990 года. Является академиком Российской академии естествознания,
+          Петровской академии наук и искусств, Международной академии
+          информатизации и Российской академии инженерных наук. В 2008 году
+          избран президентом Новгородского регионального отделения академии
+          инженерных наук.
+        </div>
+      </span>
+
+      <span class="field prof">
+        <div class="row col">
+          <span><strong>Последне повышение квалификации :</strong></span>
+          <span>
+            Психолого-педагогические основы инклюзивного образования, 18ч,
+            НОВГОРОДСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ ИМ. ЯРОСЛАВА МУДРОГО, с
+            25-06-2021 по 15-09-2021
+          </span>
+        </div>
+      </span>
+
+      <span class="field projects">
+        <div class="text">Информации нет</div>
+      </span>
+    </section>
+
+    <footer>
+      <span class="name">
+        Заведющий кафедрой проектирования и технологии радиоаппаратуры в
+        Новгородскойм госурственном университете имени Ярослава Мурого (НовГУ)
+        <br />
+        <br />
+        <strong>Бичурин Мирза Имамович</strong>
+      </span>
+      <div class="info">
+        <span>т. 97 42 67 доб. 1360</span>
+        <span>каб. 2603</span>
+        <span>Mirza.Bichurin@novsu.ru</span>
+      </div>
+    </footer>
+
+    <script src="js/modernizr-custom.js"></script>
+    <script src="js/logs.js"></script>
+    <script src="js/checkOldBrowser.js"></script>
+    <script src="js/contacts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,225 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 0 0 10px 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+header .info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 50px 0 50px;
+  gap: 30px;
+}
+
+header .info .photo,
+header .info .photo img {
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
+header .info .photo {
+  width: 115px;
+  height: 154px;
+  background: lightgray;
+}
+
+header .info .photo img {
+  border: 1px solid lightgray;
+}
+
+header .info .subinfo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+header .info .subinfo .name {
+  font-size: 2.7em;
+}
+
+header .info .subinfo .job {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 0.9em;
+  color: var(--mark);
+}
+
+header .info .contacts {
+  justify-self: end;
+  width: 100%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+header .info .contacts label {
+  text-decoration: none;
+  color: var(--accent);
+  padding: 12px 27px;
+  border: 1px solid var(--accent);
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  cursor: pointer;
+}
+
+header .info .contacts label:hover {
+  color: var(--bg);
+  background: var(--accent);
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+
+header .info .contacts .links {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+
+header .info .contacts .links input {
+  display: none;
+}
+
+header .info .contacts .links span {
+  width: 35px;
+  height: 35px;
+  display: grid;
+  place-items: center;
+  background: #f0f0f0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+}
+
+header .info .contacts .links span:hover {
+  background: #e7e7e7;
+  color: var(--accent);
+}
+
+header .info .contacts .links .email {
+  font-size: 23px;
+}
+
+#contacts:checked ~ .links {
+  height: 35px;
+  opacity: 1;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+
+header .navigate {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+
+}
+
+header .navigate ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px 5px;
+}
+
+header .navigate ul li {
+  list-style: none;
+  text-align: center;
+}
+
+header .navigate ul li label {
+  position: relative;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+header .navigate ul li label::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  bottom: 0;
+  left: 50%;
+  background-color: var(--accent);
+  opacity: 0.5;
+  border-radius: 5px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+header .navigate ul li label:hover::before {
+  width: 50%;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+
+#about:checked ~ header .navigate ul li label[for="about"]::before,
+#projects:checked ~ header .navigate ul li label[for="projects"]::before,
+#work:checked ~ header .navigate ul li label[for="work"]::before,
+#prof:checked ~ header .navigate ul li label[for="prof"]::before {
+  width: 50%;
+  opacity: 1;
+  transition: width 0.2s;
+  -webkit-transition: width 0.2s;
+  -moz-transition: width 0.2s;
+  -ms-transition: width 0.2s;
+  -o-transition: width 0.2s;
+}
+
+@media (max-width: 660px) {
+  :root {
+    font-size: 12px;
+  }
+}

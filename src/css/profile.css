@@ -1,0 +1,55 @@
+.profile {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+}
+
+.profile .field {
+  display: none;
+  width: 100%;
+  max-width: 900px;
+  margin-top: 20px;
+}
+
+.profile .field .row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+  gap: 20px;
+  padding: 30px 40px;
+  line-height: 23px;
+}
+
+.profile .field .row.col {
+  justify-content: center;
+  gap: 20px 0;
+  flex-direction: column;
+}
+
+.profile .field .row span:nth-child(2) {
+  text-align: end;
+}
+
+.profile .field .row.col span {
+    text-align: center;
+}
+
+.profile .field .row.col span:nth-child(1) {
+    color: var(--accent);
+}
+
+.profile .field .text {
+  display: flex;
+  justify-content: center;
+  padding: 30px 40px;
+  line-height: 23px;
+}
+
+#about:checked ~ .profile .about,
+#work:checked ~ .profile .work,
+#prof:checked ~ .profile .prof,
+#projects:checked ~ .profile .projects {
+  display: block;
+}
